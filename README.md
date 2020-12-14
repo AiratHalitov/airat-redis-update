@@ -1,5 +1,5 @@
 # airat-redis-update
-Скрипт установки и/или обновления redis на сервер
+Скрипт для быстрого обновления redis на сервере
 
 ## Установка и запуск:
 ```bash
@@ -9,3 +9,6 @@ cd airat-redis-update
 
 sudo ./airat-redis-update.sh
 ```
+
+**Примечания:** 
+- Полная пошаговая инструкция по установке находится [тут](https://redis.io/topics/quickstart)
