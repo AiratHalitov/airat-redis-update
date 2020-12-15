@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author: Airat Halitov
+# GitHub: https://github.com/AiratHalitov/airat-redis-update
+# License: GPLv3
+
 NP=$(nproc)
 
 rm -rf redis-stable.tar.gz
