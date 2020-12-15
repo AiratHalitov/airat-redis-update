@@ -1,5 +1,7 @@
 #!/bin/bash
 
+NP=$(nproc)
+
 rm -rf redis-stable.tar.gz
 rm -rf redis-stable
 
@@ -9,5 +11,5 @@ if [ -f redis-stable.tar.gz ]; then
     tar xvzf redis-stable.tar.gz && rm -rf redis-stable.tar.gz
 
     cd redis-stable
-    make -j2 && sudo make install && echo "Done!"
+    make -j $NP && sudo make install && echo "Done!"
 fi
