@@ -9,11 +9,11 @@ NP=$(nproc)
 rm -rf redis-stable.tar.gz
 rm -rf redis-stable
 
-wget http://download.redis.io/redis-stable.tar.gz > /dev/null 2>&1
+wget http://download.redis.io/redis-stable.tar.gz &> /dev/null
 
 if [ -f redis-stable.tar.gz ]; then
-    tar xvzf redis-stable.tar.gz > /dev/null 2>&1 && rm -rf redis-stable.tar.gz
+    tar xvzf redis-stable.tar.gz &> /dev/null && rm -rf redis-stable.tar.gz
 
     cd redis-stable
-    make -j $NP > /dev/null 2>&1 && sudo make install > /dev/null 2>&1 && echo "Done!"
+    make -j $NP &> /dev/null && sudo make install &> /dev/null && echo "Done!"
 fi
