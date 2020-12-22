@@ -9,7 +9,7 @@ NP=$(nproc)
 rm -rf redis-stable.tar.gz
 rm -rf redis-stable
 
-wget -q http://download.redis.io/redis-stable.tar.gz
+wget -q https://download.redis.io/redis-stable.tar.gz
 
 if [ -f redis-stable.tar.gz ]; then
     tar xzf redis-stable.tar.gz && rm -rf redis-stable.tar.gz
